@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>From - Mini Web App</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        
+        <h1>Contact Form</h1>
+
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+
+        <form method="POST" action="/form">
+            <input type="text" name="name" placeholder="Your name">
+            <br><br>
+
+            <input type="email" name="email" placeholder="Your email">
+            <br><br>
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Your password"
+            >
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="dashboard-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/login">Login</a>
+        </div>
+    </body>
+</html>

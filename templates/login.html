@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mini Web App</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Login</h1>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+        >
+        <br><br>
+
+        <input
+            type="password"
+            name="password"
+            placeholder="password"
+        >
+        <br><br>
+
+        <button type="submit">Login</button>
+        
+    </form>
+    <div class="dashboard-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/form">Register</a>
+    </div>
+</body>

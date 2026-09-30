@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dashboard-card {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h1 {
+    margin-bottom: 25px;
+}
+
+.dashboard-links {
+    margin-top: 25px;
+}
+
+.dashboard-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.dashboard-links a:hover {
+    background-color: #555;
+}
+
+.users-page {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.users-page h1 {
+    margin-bottom: 30px;
+}
+
+.users-page table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.users-page a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.users-page a:hover {
+    text-decoration: underline;
+}
+
+.edit-button {
+    background-color: #888;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #666;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.action-buttons form {
+    margin: 0;
+}
+
+.edit-button {
+    background-color: #333;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #555;
+}
+
+.delete-button {
+    background-color: #333;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 50px;
+    }
+
+    .dashboard-card {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .users-page {
+        width: 95%;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .action-buttons {
+        gap: 4px;
+    }
+
+    .action-buttons button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

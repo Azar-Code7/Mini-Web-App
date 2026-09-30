@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Mini Web App</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="dashboard-card">
+
+        <h1>Dashboard</h1>
+
+        <p>Welcome, {{ user[1] }}!</p>
+
+        <p>Email: {{ user[2] }}</p>
+
+        <div class="dashboard-links">
+            <a href="/users">Users</a>
+            <a href="/logout">Logout</a>
+            <a href="/">Home</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
